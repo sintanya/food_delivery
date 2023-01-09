@@ -1,0 +1,172 @@
+.header {
+ position: relative;
+
+ width: 100%;
+ background: #fff;
+
+ border-bottom: 1px solid $footer-text-color;
+
+ &__container {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ &__logo {
+  padding: 23px 0 18px 0;
+ }
+
+ &__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ &__menu {
+  @extend %text-button;
+
+  position: absolute;
+  right: 0;
+  top: 102%;
+  z-index: 1;
+
+  width: 285px;
+  height: calc(100vh - 72px);
+  padding: 22px 36px;
+
+  background: #fff;
+  transform: translateX(200%);
+
+  box-shadow: -10px 10px 20px rgb(0 0 0 / 8%);
+
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1),
+   opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  opacity: 0;
+
+  &.is-open {
+   display: block;
+
+   transform: translateX(0);
+
+   opacity: 1;
+  }
+ }
+
+ &__contact {
+  padding-bottom: 24px;
+  border-bottom: 1px solid $secondary-bg-color;
+ }
+
+ &__tel {
+  display: flex;
+
+  align-items: center;
+
+  color: $primary-text-color;
+
+  &:hover &-icon,
+  &:focus &-icon {
+   color: $yellow;
+  }
+
+  &-icon {
+   margin-right: 13px;
+   color: $footer-text-color;
+   fill: currentColor;
+
+   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+ }
+
+ &__work-time {
+  margin-left: 37px;
+  margin-top: 4px;
+  letter-spacing: 0;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  line-height: 1.33;
+  color: $secondary-text-color;
+ }
+}
+
+.button-login {
+ @extend %text-button;
+ margin-right: 48px;
+ padding: 23px 0 18px 0;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ color: $secondary-text-color;
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ &:hover,
+ &:focus {
+  color: $primary-text-color;
+ }
+
+ &__icon {
+  margin-right: 2px;
+  fill: currentColor;
+ }
+}
+
+.button-menu {
+ width: 48px;
+ height: 48px;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-right: 40px;
+
+ color: $secondary-text-color;
+ background-color: $white-color;
+ border: none;
+ border-radius: 50%;
+ box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+ cursor: pointer;
+
+ &.is-open {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+ }
+
+ &__cross {
+  display: none;
+ }
+
+ &.is-open &__cross {
+  display: block;
+ }
+
+ &.is-open &__icon {
+  display: none;
+ }
+
+ &:hover {
+  color: $primary-text-color;
+ }
+}
+
+.nav {
+ &__item {
+  padding: 21px 0;
+
+  border-bottom: 1px solid $secondary-bg-color;
+ }
+ &__link {
+  color: $secondary-text-color;
+
+  &:hover,
+  &:focus {
+   color: $primary-text-color;
+  }
+ }
+}
