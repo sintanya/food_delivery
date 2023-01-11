@@ -1,9 +1,10 @@
 .hero {
+ max-width: 1440px;
  position: relative;
 
  min-height: 731px;
  padding-top: 120px;
- margin-bottom: 57px;
+ margin: 0 auto 57px;
 
  background: url('../img/photo-hero-big.png') top 12px right 72px no-repeat;
 

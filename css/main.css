@@ -31,7 +31,6 @@ h3 {
 }
 
 body {
-  max-width: 1440px;
   margin: 0 auto;
   background-color: #ffffff;
   color: #3f4255;
@@ -51,7 +50,7 @@ a {
   color: inherit;
 }
 
-.restaurants__title {
+.delivery__title, .restaurants__title {
   font-family: "Poppins";
   font-weight: 300;
   font-size: 36px;
@@ -59,14 +58,15 @@ a {
   letter-spacing: 0.08em;
 }
 
-.features__item {
+.delivery__input, .delivery__text, .features__item {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.5px;
 }
 
-.hero__item, .button-login, .header__menu {
+.delivery__button, .hero__item, .button-login, .header__menu {
+  font-family: "Martel Sans";
   font-weight: 700;
   font-size: 16px;
   line-height: 1.2;
@@ -240,10 +240,11 @@ a {
 }
 
 .hero {
+  max-width: 1440px;
   position: relative;
   min-height: 731px;
   padding-top: 120px;
-  margin-bottom: 57px;
+  margin: 0 auto 57px;
   background: url("../img/photo-hero-big.png") top 12px right 72px no-repeat;
 }
 .hero__title {
@@ -372,4 +373,67 @@ a {
 }
 .card-slider__button:hover {
   color: #3f4255;
+}
+
+.delivery {
+  padding-top: 76px;
+  padding-bottom: 81px;
+  background-color: #f2f4fa;
+}
+.delivery__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.delivery__content {
+  margin-right: 159px;
+}
+.delivery__title {
+  margin-bottom: 24px;
+}
+.delivery__text {
+  max-width: 365px;
+}
+.delivery__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.delivery__input-box {
+  position: relative;
+  margin-right: 4px;
+}
+.delivery__input {
+  width: 100%;
+  min-width: 336px;
+  padding: 24px 16px 24px 48px;
+  border: none;
+  -webkit-box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+}
+.delivery__icon {
+  position: absolute;
+  left: 16px;
+  top: 24px;
+}
+.delivery__button {
+  padding: 26px 24px;
+  color: #b79c10;
+  border: none;
+  background: #ffe145;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.delivery__button:hover, .delivery__button:focus {
+  background: #fff7cc;
 }/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,68 @@
+.delivery {
+ padding-top: 76px;
+ padding-bottom: 81px;
+ background-color: $secondary-bg-color;
+ &__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ &__content {
+  margin-right: 159px;
+ }
+
+ &__title {
+  @extend %section-title;
+  margin-bottom: 24px;
+ }
+
+ &__text {
+  @extend %section-text;
+  max-width: 365px;
+ }
+
+ &__form {
+  display: flex;
+
+  align-items: center;
+ }
+
+ &__input-box {
+  position: relative;
+  margin-right: 4px;
+ }
+ &__input {
+  @extend %section-text;
+  width: 100%;
+  min-width: 336px;
+  padding: 24px 16px 24px 48px;
+
+  border: none;
+  box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+ }
+
+ &__icon {
+  position: absolute;
+  left: 16px;
+  top: 24px;
+ }
+
+ &__button {
+  @extend %text-button;
+  padding: 26px 24px;
+
+  color: #b79c10;
+
+  border: none;
+  background: #ffe145;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+   background: #fff7cc;
+  }
+ }
+}
