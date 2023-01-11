@@ -15,6 +15,7 @@
    rel="stylesheet"
    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
   />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/main.min.css" />
  </head>
  <body>
@@ -95,7 +96,64 @@
      </ul>
     </div>
    </section>
+   <section class="restaurants container">
+    <h2 class="restaurants__title">Restaurants</h2>
+    <!-- Основний контейнер слайдера -->
+    <div class="restaurants__slider">
+     <div class="card-slider swiper">
+      <!-- Необхідна додаткова обгортка -->
+      <div class="card-slider__wrapper swiper-wrapper">
+       <!-- Слайди -->
+       <div class="card-slider__slide swiper-slide">
+        <div>
+         <img src="./img/restaurant1.jpg" alt="restaurants Burger" width="296px" />
+         <svg class="card-slider__logo" width="296px" height="112px">
+          <use href="./img/icons.svg#icon-restaurant-logo1"></use>
+         </svg>
+        </div>
+       </div>
+       <div class="card-slider__slide swiper-slide">
+        <div>
+         <img src="./img/restaurant2.jpg" alt="restaurants Burger" width="296px" />
+         <svg class="card-slider__logo" width="296px" height="112px">
+          <use href="./img/icons.svg#icon-restaurant-logo2"></use>
+         </svg>
+        </div>
+       </div>
+       <div class="card-slider__slide swiper-slide">
+        <div>
+         <img src="./img/restaurant3.jpg" alt="restaurants Burger" width="296px" />
+         <svg class="card-slider__logo" width="296px" height="112px">
+          <use href="./img/icons.svg#icon-restaurant-logo3"></use>
+         </svg>
+        </div>
+       </div>
+       <div class="card-slider__slide swiper-slide">
+        <div>
+         <img src="./img/restaurant4.jpg" alt="restaurants Burger" width="296px" />
+         <svg class="card-slider__logo" width="296px" height="112px">
+          <use href="./img/icons.svg#icon-restaurant-logo4"></use>
+         </svg>
+        </div>
+       </div>
+      </div>
+     </div>
+
+     <button class="card-slider__button card-slider__button--left">
+      <svg class="card-slider__icon" width="24px" height="24px">
+       <use href="./img/icons.svg#icon-left"></use>
+      </svg>
+     </button>
+     <button class="card-slider__button card-slider__button--right">
+      <svg class="card-slider__icon" width="24px" height="24px">
+       <use href="./img/icons.svg#icon-right"></use>
+      </svg>
+     </button>
+    </div>
+   </section>
   </main>
   <script src="./js/menu.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./js/swiper.js"></script>
  </body>
 </html>

@@ -1,11 +1,13 @@
 body {
+ max-width: 1440px;
+ margin: 0 auto;
+
  background-color: $white-color;
  color: $primary-text-color;
 
  font-family: 'Martel Sans', sans-serif;
 
  overflow-x: hidden;
- margin: 0;
 }
 
 .container {
