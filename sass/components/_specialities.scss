@@ -1,0 +1,58 @@
+.specialities {
+ padding-top: 66px;
+ padding-bottom: 43px;
+
+ &__title {
+  @extend %section-title;
+  margin-bottom: 9px;
+ }
+
+ &__slider {
+  position: relative;
+ }
+}
+
+.logo-slider {
+ padding: 9px;
+ margin: 0px -9px;
+
+ &__slide {
+  @extend %section-text;
+  margin: 20px 0;
+  height: 136px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0px 2px 16px rgba(60, 62, 74, 0.08);
+  border-radius: 6px;
+ }
+
+ &__logo {
+  margin-bottom: 16px;
+ }
+
+ &__button {
+  @extend %slider-button;
+
+  &--left {
+   position: absolute;
+   top: 73px;
+   left: -20px;
+   z-index: 2;
+  }
+
+  &--right {
+   position: absolute;
+   top: 73px;
+   right: -23px;
+   z-index: 2;
+  }
+ }
+
+ &__button:hover {
+  color: $primary-text-color;
+ }
+}

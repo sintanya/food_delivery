@@ -34,7 +34,7 @@
 
   width: 285px;
   height: calc(100vh - 72px);
-  padding: 22px 36px;
+  padding: 20px 36px;
 
   background: #fff;
   transform: translateX(200%);
@@ -96,8 +96,8 @@
 
 .button-login {
  @extend %text-button;
- margin-right: 48px;
- padding: 23px 0 18px 0;
+ margin-right: 45px;
+ padding: 20px 0 18px 0;
 
  display: flex;
  justify-content: center;
@@ -117,8 +117,8 @@
 }
 
 .button-menu {
- width: 48px;
- height: 48px;
+ width: 53px;
+ height: 53px;
 
  display: flex;
  justify-content: center;
@@ -157,7 +157,7 @@
 
 .nav {
  &__item {
-  padding: 21px 0;
+  padding: 22px 0;
 
   border-bottom: 1px solid $secondary-bg-color;
  }

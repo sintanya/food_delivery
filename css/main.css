@@ -42,7 +42,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
-  width: 1282px;
+  width: 1286px;
 }
 
 a {
@@ -50,7 +50,7 @@ a {
   color: inherit;
 }
 
-.delivery__title, .restaurants__title {
+.specialities__title, .delivery__title, .restaurants__title {
   font-family: "Poppins";
   font-weight: 300;
   font-size: 36px;
@@ -58,7 +58,7 @@ a {
   letter-spacing: 0.08em;
 }
 
-.delivery__input, .delivery__text, .features__item {
+.logo-slider__slide, .delivery__input, .delivery__text, .features__item {
   font-weight: 300;
   font-size: 16px;
   line-height: 1.5;
@@ -71,6 +71,29 @@ a {
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.5px;
+}
+
+.logo-slider__button, .card-slider__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 48px;
+  height: 48px;
+  color: #9093a6;
+  border: none;
+  border-radius: 50%;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .header {
@@ -112,7 +135,7 @@ a {
   z-index: 1;
   width: 285px;
   height: calc(100vh - 72px);
-  padding: 22px 36px;
+  padding: 20px 36px;
   background: #fff;
   -webkit-transform: translateX(200%);
           transform: translateX(200%);
@@ -165,8 +188,8 @@ a {
 }
 
 .button-login {
-  margin-right: 48px;
-  padding: 23px 0 18px 0;
+  margin-right: 45px;
+  padding: 20px 0 18px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,8 +212,8 @@ a {
 }
 
 .button-menu {
-  width: 48px;
-  height: 48px;
+  width: 53px;
+  height: 53px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,7 +252,7 @@ a {
 }
 
 .nav__item {
-  padding: 21px 0;
+  padding: 22px 0;
   border-bottom: 1px solid #f2f4fa;
 }
 .nav__link {
@@ -262,7 +285,7 @@ a {
   display: flex;
 }
 .hero__item {
-  margin-right: 27px;
+  margin-right: 23px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -273,7 +296,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 16px 20px;
+  padding: 16px 22px;
   border: 2px solid #ffe145;
   border-radius: 4px;
 }
@@ -337,38 +360,16 @@ a {
   border-radius: 4px;
   overflow: hidden;
 }
-.card-slider__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 48px;
-  height: 48px;
-  color: #9093a6;
-  border: none;
-  border-radius: 50%;
-  background: #ffffff;
-  -webkit-box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
-          box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.08);
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-}
 .card-slider__button--left {
   position: absolute;
   top: 145px;
-  left: -22px;
+  left: -20px;
   z-index: 2;
 }
 .card-slider__button--right {
   position: absolute;
   top: 145px;
-  right: -26px;
+  right: -22px;
   z-index: 2;
 }
 .card-slider__button:hover {
@@ -436,4 +437,58 @@ a {
 }
 .delivery__button:hover, .delivery__button:focus {
   background: #fff7cc;
+}
+
+.specialities {
+  padding-top: 66px;
+  padding-bottom: 43px;
+}
+.specialities__title {
+  margin-bottom: 9px;
+}
+.specialities__slider {
+  position: relative;
+}
+
+.logo-slider {
+  padding: 9px;
+  margin: 0px -9px;
+}
+.logo-slider__slide {
+  margin: 20px 0;
+  height: 136px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 2px 16px rgba(60, 62, 74, 0.08);
+          box-shadow: 0px 2px 16px rgba(60, 62, 74, 0.08);
+  border-radius: 6px;
+}
+.logo-slider__logo {
+  margin-bottom: 16px;
+}
+.logo-slider__button--left {
+  position: absolute;
+  top: 73px;
+  left: -20px;
+  z-index: 2;
+}
+.logo-slider__button--right {
+  position: absolute;
+  top: 73px;
+  right: -23px;
+  z-index: 2;
+}
+.logo-slider__button:hover {
+  color: #3f4255;
 }/*# sourceMappingURL=main.css.map */
