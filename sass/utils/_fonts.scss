@@ -1,0 +1,11 @@
+@font-face {
+ font-family: 'Open Sans Condensed';
+ font-weight: 700;
+ font-style: normal;
+ src: local('Open Sans Condensed'), local('OpenSans-CondBold'),
+  url('../fonts/OpenSans-CondBold.woff2') format('woff2'),
+  url('../fonts/OpenSans-CondBold.woff') format('woff'),
+  url('../fonts/OpenSans-CondBold.eot') format('eot');
+
+ font-display: swap;
+}
