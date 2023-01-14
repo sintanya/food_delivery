@@ -1,0 +1,29 @@
+.instafoto {
+ padding-top: 72px;
+ padding-bottom: 72px;
+
+ &__title {
+  @extend %section-title;
+  margin-bottom: 21px;
+ }
+
+ &__text {
+  color: $secondary-text-color;
+ }
+
+ &__list {
+  display: flex;
+  align-items: center;
+ }
+
+ &__item {
+  width: calc((100% - 24px * 3) / 4);
+
+  border-radius: 6px;
+  overflow: hidden;
+
+  & + & {
+   margin-left: 24px;
+  }
+ }
+}

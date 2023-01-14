@@ -57,7 +57,7 @@ a {
   color: inherit;
 }
 
-.specialities__title, .delivery__title, .restaurants__title {
+.instafoto__title, .specialities__title, .delivery__title, .restaurants__title {
   font-family: "Poppins";
   font-weight: 300;
   font-size: 36px;
@@ -504,6 +504,7 @@ a {
   max-width: 1440px;
   padding-top: 56px;
   padding-bottom: 45px;
+  margin: 0 auto;
   background: url("../img/bg.jpg") no-repeat;
 }
 .benefits__list {
@@ -581,4 +582,31 @@ a {
   font-weight: 600;
   font-size: 24px;
   line-height: 1.33;
+}
+
+.instafoto {
+  padding-top: 72px;
+  padding-bottom: 72px;
+}
+.instafoto__title {
+  margin-bottom: 21px;
+}
+.instafoto__text {
+  color: #9093a6;
+}
+.instafoto__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.instafoto__item {
+  width: calc((100% - 72px) / 4);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.instafoto__item + .instafoto__item {
+  margin-left: 24px;
 }/*# sourceMappingURL=main.css.map */
