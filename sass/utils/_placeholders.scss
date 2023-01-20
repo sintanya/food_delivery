@@ -14,11 +14,12 @@
 
  letter-spacing: 0.5px;
 }
+
 %text-button {
- font-family: 'Martel Sans';
+ //  font-family: 'Martel Sans';
  font-weight: 700;
  font-size: 16px;
- line-height: 1.2;
+ line-height: 1.25;
 
  letter-spacing: 0.5px;
 }
@@ -40,4 +41,11 @@
  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
  cursor: pointer;
+}
+
+%footer-title {
+ font-family: 'Poppins';
+ font-weight: 600;
+ font-size: 24px;
+ line-height: 1.33;
 }

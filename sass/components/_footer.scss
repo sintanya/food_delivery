@@ -1,0 +1,150 @@
+.footer {
+ background-color: $primary-text-color;
+ padding-top: 48px;
+ padding-bottom: 48px;
+
+ color: $footer-text-color;
+
+ &__first-part {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 105px;
+ }
+
+ &__logo-box {
+  min-width: 296px;
+  margin-right: 184px;
+ }
+
+ &__logo {
+  position: relative;
+  margin-bottom: 97px;
+
+  display: block;
+
+  &::before {
+   content: ' ';
+   position: absolute;
+   top: 72px;
+
+   width: 296px;
+   height: 1px;
+   background: $footer-text-color;
+  }
+ }
+
+ &__info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+ }
+
+ &__title {
+  @extend %footer-title;
+  margin-bottom: 24px;
+
+  color: $white-color;
+ }
+
+ &__item {
+  @extend %text-button;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+   cursor: pointer;
+   color: $footer-yellow;
+  }
+
+  & + & {
+   margin-top: 16px;
+  }
+ }
+
+ &__second-part {
+  display: flex;
+  justify-content: space-between;
+ }
+
+ &__copyright {
+  display: flex;
+ }
+
+ &__copyright-item {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 1.33;
+  color: $white-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+   cursor: pointer;
+   color: $footer-yellow;
+  }
+
+  & + & {
+   margin-left: 60px;
+  }
+ }
+}
+
+.download-link {
+ display: flex;
+ align-items: center;
+
+ &__item {
+  width: 77px;
+
+  & + & {
+   margin-left: 8px;
+  }
+ }
+}
+
+.contacts {
+ max-width: 296px;
+ width: 100%;
+
+ &__item {
+  @extend %section-text;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+   cursor: pointer;
+   color: $footer-yellow;
+  }
+
+  & + & {
+   margin-top: 16px;
+  }
+ }
+ &__link {
+  @extend %text-button;
+ }
+}
+
+.networks {
+ &__list {
+  display: flex;
+ }
+
+ &_item {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+   cursor: pointer;
+   color: $footer-yellow;
+  }
+
+  & + & {
+   margin-left: 24px;
+  }
+ }
+}
