@@ -338,7 +338,11 @@ a {
   color: #3f4255;
 }
 
-main,
+.restaurants,
+.delivery,
+.specialities,
+.benefits,
+.instafoto,
 footer {
   display: none;
 }
@@ -350,6 +354,33 @@ footer {
   padding-top: 120px;
   margin: 0 auto 57px;
   background: url("../img/photo-hero-big.png") top 12px right 72px no-repeat;
+  background-size: 57.5%;
+}
+@media screen and (max-width: 1080px) {
+  .hero {
+    background-position: top 112px right 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: 500px;
+    padding-top: 77px;
+    background-position: top 51% right 5%;
+    background-size: 64%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    min-height: 457px;
+    background-position: top 116px right 0;
+    background-size: 80%;
+  }
+}
+@media screen and (max-width: 440px) {
+  .hero {
+    background: url("../img/rucola-png.png") top 125px right -21px no-repeat;
+    min-height: 320px;
+  }
 }
 .hero__title {
   max-width: 528px;
@@ -359,11 +390,49 @@ footer {
   line-height: 1.1;
   letter-spacing: 0.05em;
 }
+@media screen and (max-width: 1080px) {
+  .hero__title {
+    font-size: 56px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .hero__title {
+    max-width: 434px;
+    font-size: 44px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__title {
+    max-width: 370px;
+    font-size: 37px;
+  }
+}
+@media screen and (max-width: 440px) {
+  .hero__title {
+    max-width: 290px;
+    font-size: 33px;
+  }
+}
 .hero__list {
   margin-top: 88px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 768px) {
+  .hero__list {
+    margin-top: 56px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__list {
+    max-width: 118px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 50px;
+  }
 }
 .hero__item {
   margin-right: 23px;
@@ -381,11 +450,28 @@ footer {
   border: 2px solid #ffe145;
   border-radius: 4px;
 }
+@media screen and (max-width: 768px) {
+  .hero__item {
+    padding: 10px 16px;
+    margin-right: 12px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero__item {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+}
 .hero__text {
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: normal;
+}
+@media screen and (max-width: 480px) {
+  .hero__text {
+    font-size: 10px;
+  }
 }
 
 .features {
@@ -401,6 +487,28 @@ footer {
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
 }
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .features {
+    padding: 28px 29px 28px 36px;
+    bottom: -12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .features {
+    bottom: -20px;
+    padding: 17px 20px 17px 45px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .features {
+    padding: 10px 15px 10px 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .features {
+    display: none;
+  }
+}
 .features__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,14 +521,62 @@ footer {
           align-items: center;
   max-width: 250px;
 }
+@media screen and (min-width: 768px) and (max-width: 1080px) {
+  .features__item {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .features__item {
+    max-width: 175px;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .features__item {
+    font-size: 10px;
+  }
+}
 .features__item + .features__item {
   margin-left: 46px;
+}
+@media screen and (max-width: 768px) {
+  .features__item + .features__item {
+    margin-left: 26px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .features__item + .features__item {
+    margin-left: 10px;
+  }
 }
 .features__item:last-child {
   margin-left: 53px;
 }
+@media screen and (max-width: 768px) {
+  .features__item:last-child {
+    margin-left: 33px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .features__item:last-child {
+    margin-left: 13px;
+  }
+}
 .features__icon {
   margin-right: 16px;
+}
+@media screen and (max-width: 768px) {
+  .features__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .features__icon {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 .restaurants {

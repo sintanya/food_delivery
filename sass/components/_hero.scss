@@ -7,6 +7,31 @@
  margin: 0 auto 57px;
 
  background: url('../img/photo-hero-big.png') top 12px right 72px no-repeat;
+ background-size: 57.5%;
+
+ @media screen and (max-width: 1080px) {
+  background-position: top 112px right 30px;
+ }
+
+ @media screen and (max-width: $width-tablet) {
+  min-height: 500px;
+  padding-top: 77px;
+
+  background-position: top 51% right 5%;
+  background-size: 64%;
+ }
+
+ @media screen and (max-width: $width-mobile) {
+  min-height: 457px;
+
+  background-position: top 116px right 0;
+  background-size: 80%;
+ }
+
+ @media screen and (max-width: 440px) {
+  background: url('../img/rucola-png.png') top 125px right -21px no-repeat;
+  min-height: 320px;
+ }
 
  &__title {
   max-width: 528px;
@@ -16,12 +41,42 @@
   font-size: 58px;
   line-height: 1.1;
   letter-spacing: 0.05em;
+
+  @media screen and (max-width: 1080px) {
+   font-size: 56px;
+  }
+
+  @media screen and (max-width: $width-tablet) {
+   max-width: 434px;
+   font-size: 44px;
+  }
+
+  @media screen and (max-width: $width-mobile) {
+   max-width: 370px;
+   font-size: 37px;
+  }
+
+  @media screen and (max-width: 440px) {
+   max-width: 290px;
+   font-size: 33px;
+  }
  }
 
  &__list {
   margin-top: 88px;
 
   display: flex;
+
+  @media screen and (max-width: $width-tablet) {
+   margin-top: 56px;
+  }
+
+  @media screen and (max-width: $width-mobile) {
+   max-width: 118px;
+   flex-direction: column;
+
+   margin-top: 50px;
+  }
  }
 
  &__item {
@@ -36,6 +91,16 @@
 
   border: 2px solid #ffe145;
   border-radius: 4px;
+
+  @media screen and (max-width: $width-tablet) {
+   padding: 10px 16px;
+   margin-right: 12px;
+  }
+
+  @media screen and (max-width: $width-mobile) {
+   margin-right: 0;
+   margin-bottom: 8px;
+  }
  }
 
  &__text {
@@ -43,6 +108,10 @@
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: normal;
+
+  @media screen and (max-width: $width-mobile) {
+   font-size: 10px;
+  }
  }
 }
 
@@ -60,6 +129,25 @@
  border-top-right-radius: 6px;
  border-bottom-right-radius: 6px;
 
+ @media screen and (min-width: 768px) and (max-width: 1080px) {
+  padding: 28px 29px 28px 36px;
+  bottom: -12px;
+ }
+
+ @media screen and (max-width: $width-tablet) {
+  bottom: -20px;
+
+  padding: 17px 20px 17px 45px;
+ }
+
+ @media screen and (max-width: 600px) {
+  padding: 10px 15px 10px 20px;
+ }
+
+ @media screen and (max-width: $width-mobile) {
+  display: none;
+ }
+
  &__item {
   @extend %section-text;
 
@@ -68,15 +156,55 @@
   align-items: center;
   max-width: 250px;
 
+  @media screen and (min-width: 768px) and (max-width: 1080px) {
+   font-size: 13px;
+  }
+
+  @media screen and (max-width: $width-tablet) {
+   max-width: 175px;
+
+   font-size: 10px;
+  }
+
+  @media screen and (max-width: 600px) {
+   font-size: 10px;
+  }
+
   & + & {
    margin-left: 46px;
+
+   @media screen and (max-width: $width-tablet) {
+    margin-left: 26px;
+   }
+
+   @media screen and (max-width: 600px) {
+    margin-left: 10px;
+   }
   }
   &:last-child {
    margin-left: 53px;
+
+   @media screen and (max-width: $width-tablet) {
+    margin-left: 33px;
+   }
+
+   @media screen and (max-width: 600px) {
+    margin-left: 13px;
+   }
   }
  }
 
  &__icon {
   margin-right: 16px;
+
+  @media screen and (max-width: $width-tablet) {
+   width: 40px;
+   height: 40px;
+  }
+
+  @media screen and (max-width: 600px) {
+   width: 28px;
+   height: 28px;
+  }
  }
 }
