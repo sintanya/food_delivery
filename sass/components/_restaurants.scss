@@ -2,10 +2,26 @@
  padding-top: 42px;
  padding-bottom: 52px;
 
+ @media screen and (max-width: 1080px) {
+  padding-top: 22px;
+ }
+
  &__title {
   @extend %section-title;
 
   margin-bottom: 18px;
+
+  @media screen and (max-width: $width-tablet) {
+   margin-bottom: 0;
+
+   font-size: 34px;
+  }
+
+  @media screen and (max-width: $width-mobile) {
+   margin-bottom: -10px;
+
+   font-size: 30px;
+  }
  }
  &__slider {
   position: relative;
@@ -13,6 +29,9 @@
 }
 
 .card-slider {
+ @media screen and (min-width: 768px) and (max-width: 1080px) {
+  max-width: calc(100% - 15px);
+ }
  &__slide {
   margin: 20px 0;
 
@@ -26,16 +45,26 @@
 
   &--left {
    position: absolute;
-   top: 145px;
+   top: 50%;
    left: -20px;
+   transform: translateY(-50%);
    z-index: 2;
+
+   @media screen and (max-width: 1080px) {
+    left: -14px;
+   }
   }
 
   &--right {
    position: absolute;
-   top: 145px;
+   top: 50%;
    right: -22px;
+   transform: translateY(-50%);
    z-index: 2;
+
+   @media screen and (max-width: 1080px) {
+    right: -13px;
+   }
   }
  }
 
