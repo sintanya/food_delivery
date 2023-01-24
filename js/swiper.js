@@ -33,12 +33,25 @@ const swiper = new Swiper('.card-slider', {
 
 
 const swiper1 = new Swiper('.logo-slider', {
-     // Default parameters
     slidesPerView: 8,
     spaceBetween: 24,
     loop: true,
     navigation: {
           nextEl: ".logo-slider__button--right",
           prevEl: ".logo-slider__button--left",
-        },
+  },
+    breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 24
+    },
+    481: {
+      slidesPerView: 4,
+      spaceBetween: 20
+    },
+    1081: {
+      slidesPerView: 8,
+      spaceBetween: 24
+    }
+  },
 });

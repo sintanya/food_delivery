@@ -2,9 +2,21 @@
  padding-top: 66px;
  padding-bottom: 43px;
 
+ @media screen and (max-width: 1080px) {
+  padding-top: 52px;
+ }
+ @media screen and (max-width: $width-mobile) {
+  padding-top: 30px;
+  padding-bottom: 20px;
+ }
+
  &__title {
   @extend %section-title;
   margin-bottom: 9px;
+
+  @media screen and (max-width: $width-mobile) {
+   margin-bottom: -9px;
+  }
  }
 
  &__slider {
@@ -15,6 +27,12 @@
 .logo-slider {
  padding: 9px;
  margin: 0px -9px;
+
+ @media screen and (min-width: 768px) and (max-width: 1080px) {
+  max-width: calc(100% - 15px);
+  padding: 0;
+  margin: 0 auto;
+ }
 
  &__slide {
   @extend %section-text;
@@ -39,16 +57,36 @@
 
   &--left {
    position: absolute;
-   top: 73px;
-   left: -20px;
+   top: 50%;
+   left: -23px;
+
+   transform: translateY(-50%);
    z-index: 2;
+
+   @media screen and (max-width: 1080px) {
+    left: -8px;
+   }
+
+   @media screen and (max-width: $width-mobile) {
+    left: -12px;
+   }
   }
 
   &--right {
    position: absolute;
-   top: 73px;
-   right: -23px;
+   top: 50%;
+   right: -24px;
+
+   transform: translateY(-50%);
    z-index: 2;
+
+   @media screen and (max-width: 1080px) {
+    right: -8px;
+   }
+
+   @media screen and (max-width: $width-mobile) {
+    right: -10px;
+   }
   }
  }
 

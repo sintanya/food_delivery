@@ -20,11 +20,11 @@
   margin-bottom: 18px;
 
   @media screen and (max-width: $width-tablet) {
-   margin-bottom: 0;
+   margin-bottom: 4px;
   }
 
   @media screen and (max-width: $width-mobile) {
-   margin-bottom: -10px;
+   margin-bottom: -9px;
   }
  }
  &__slider {
@@ -51,11 +51,16 @@
    position: absolute;
    top: 50%;
    left: -20px;
+
    transform: translateY(-50%);
    z-index: 2;
 
    @media screen and (max-width: 1080px) {
     left: -14px;
+   }
+
+   @media screen and (max-width: $width-tablet) {
+    left: -13px;
    }
   }
 
@@ -63,11 +68,16 @@
    position: absolute;
    top: 50%;
    right: -22px;
+
    transform: translateY(-50%);
    z-index: 2;
 
    @media screen and (max-width: 1080px) {
     right: -13px;
+   }
+
+   @media screen and (max-width: $width-tablet) {
+    right: -9px;
    }
   }
  }
