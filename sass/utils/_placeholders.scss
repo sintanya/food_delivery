@@ -5,6 +5,14 @@
  line-height: 1.78;
 
  letter-spacing: 0.08em;
+
+ @media screen and (max-width: $width-tablet) {
+  font-size: 34px;
+ }
+
+ @media screen and (max-width: $width-mobile) {
+  font-size: 30px;
+ }
 }
 
 %section-text {
@@ -13,6 +21,10 @@
  line-height: 1.5;
 
  letter-spacing: 0.5px;
+
+ @media screen and (max-width: $width-mobile) {
+  font-size: 13px;
+ }
 }
 
 %text-button {
