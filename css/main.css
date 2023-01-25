@@ -359,7 +359,6 @@ a {
   color: #3f4255;
 }
 
-.benefits,
 .instafoto,
 footer {
   display: none;
@@ -940,6 +939,18 @@ footer {
   margin: 0 auto;
   background: url("../img/bg.jpg") no-repeat;
 }
+@media screen and (max-width: 768px) {
+  .benefits {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background: #f2f4fa;
+  }
+}
+@media screen and (max-width: 480px) {
+  .benefits {
+    display: none;
+  }
+}
 .benefits__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -950,7 +961,8 @@ footer {
   margin-top: 6px;
 }
 .benefits__item {
-  width: 183px;
+  max-width: 183px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -962,8 +974,28 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
+@media screen and (max-width: 1080px) {
+  .benefits__item {
+    max-width: 140px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .benefits__item {
+    max-width: 125px;
+  }
+}
 .benefits__item + .benefits__item {
   margin-left: 25px;
+}
+@media screen and (max-width: 1080px) {
+  .benefits__item + .benefits__item {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .benefits__item + .benefits__item {
+    margin-left: 20px;
+  }
 }
 .benefits__number {
   position: relative;
@@ -988,6 +1020,20 @@ footer {
   border-radius: 50%;
   z-index: 2;
 }
+@media screen and (max-width: 1080px) {
+  .benefits__number {
+    width: 101px;
+    height: 101px;
+    font-size: 36px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .benefits__number {
+    width: 85px;
+    height: 85px;
+    font-size: 26px;
+  }
+}
 .benefits__number::before {
   content: " ";
   position: absolute;
@@ -997,6 +1043,18 @@ footer {
   background: #ffe145;
   border-radius: 50%;
   z-index: -2;
+}
+@media screen and (max-width: 1080px) {
+  .benefits__number::before {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .benefits__number::before {
+    width: 84px;
+    height: 84px;
+  }
 }
 .benefits__number::after {
   content: " ";
@@ -1008,13 +1066,38 @@ footer {
   border-radius: 50%;
   z-index: -1;
 }
+@media screen and (max-width: 1080px) {
+  .benefits__number::after {
+    width: 100px;
+    height: 100px;
+    top: -1px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .benefits__number::after {
+    width: 84px;
+    height: 84px;
+  }
+}
 .benefits__text {
-  width: 225px;
+  max-width: 225px;
+  width: 100%;
   text-align: center;
+  white-space: nowrap;
   font-family: "Poppins";
   font-weight: 600;
   font-size: 24px;
   line-height: 1.33;
+}
+@media screen and (max-width: 1080px) {
+  .benefits__text {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .benefits__text {
+    font-size: 16px;
+  }
 }
 
 .instafoto {
