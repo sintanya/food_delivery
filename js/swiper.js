@@ -33,8 +33,8 @@ const swiper = new Swiper('.card-slider', {
 
 
 const swiper1 = new Swiper('.logo-slider', {
-    slidesPerView: 8,
-    spaceBetween: 24,
+    // slidesPerView: 8,
+    // spaceBetween: 24,
     loop: true,
     navigation: {
           nextEl: ".logo-slider__button--right",
@@ -54,4 +54,32 @@ const swiper1 = new Swiper('.logo-slider', {
       spaceBetween: 24
     }
   },
+});
+
+
+const swiper2 = new Swiper('.instafoto-slider', {
+    navigation: {
+          nextEl: ".instafoto__button--right",
+          prevEl: ".instafoto__button--left",
+  },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        loop: true,
+
+      },
+      481: {
+        slidesPerView: 2,
+        spaceBetween: 20, 
+        loop: true,
+   
+      },
+      769: {
+       
+        loop: false,
+        slidesPerView: 4,
+        spaceBetween: 20
+      }
+  },
+    
 });

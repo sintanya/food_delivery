@@ -21,6 +21,10 @@
 
  &__slider {
   position: relative;
+
+  @media screen and (max-width: 1300px) {
+   padding: 0 9px;
+  }
  }
 }
 
@@ -28,7 +32,7 @@
  padding: 9px;
  margin: 0px -9px;
 
- @media screen and (min-width: 768px) and (max-width: 1080px) {
+ @media screen and (min-width: 769px) and (max-width: 1080px) {
   max-width: calc(100% - 15px);
   padding: 0;
   margin: 0 auto;
@@ -56,12 +60,11 @@
   @extend %slider-button;
 
   &--left {
-   position: absolute;
-   top: 50%;
    left: -23px;
 
-   transform: translateY(-50%);
-   z-index: 2;
+   @media screen and (max-width: 1300px) {
+    left: -15px;
+   }
 
    @media screen and (max-width: 1080px) {
     left: -8px;
@@ -73,24 +76,19 @@
   }
 
   &--right {
-   position: absolute;
-   top: 50%;
    right: -24px;
 
-   transform: translateY(-50%);
-   z-index: 2;
+   @media screen and (max-width: 1300px) {
+    right: -15px;
+   }
 
    @media screen and (max-width: 1080px) {
     right: -8px;
    }
 
    @media screen and (max-width: $width-mobile) {
-    right: -10px;
+    right: -11px;
    }
   }
- }
-
- &__button:hover {
-  color: $primary-text-color;
  }
 }

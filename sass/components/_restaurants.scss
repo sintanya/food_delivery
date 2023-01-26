@@ -29,13 +29,18 @@
  }
  &__slider {
   position: relative;
+
+  @media screen and (max-width: 1300px) {
+   padding: 0 9px;
+  }
  }
 }
 
 .card-slider {
- @media screen and (min-width: 768px) and (max-width: 1080px) {
+ @media screen and (min-width: 769px) and (max-width: 1080px) {
   max-width: calc(100% - 15px);
  }
+
  &__slide {
   margin: 20px 0;
 
@@ -48,41 +53,27 @@
   @extend %slider-button;
 
   &--left {
-   position: absolute;
-   top: 50%;
    left: -20px;
 
-   transform: translateY(-50%);
-   z-index: 2;
-
-   @media screen and (max-width: 1080px) {
-    left: -14px;
+   @media screen and (max-width: 1300px) {
+    left: -15px;
    }
 
-   @media screen and (max-width: $width-tablet) {
-    left: -13px;
+   @media screen and (max-width: 1080px) {
+    left: -12px;
    }
   }
 
   &--right {
-   position: absolute;
-   top: 50%;
    right: -22px;
 
-   transform: translateY(-50%);
-   z-index: 2;
+   @media screen and (max-width: 1300px) {
+    right: -15px;
+   }
 
    @media screen and (max-width: 1080px) {
-    right: -13px;
-   }
-
-   @media screen and (max-width: $width-tablet) {
-    right: -9px;
+    right: -11px;
    }
   }
- }
-
- &__button:hover {
-  color: $primary-text-color;
  }
 }

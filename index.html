@@ -285,20 +285,35 @@
      <h2 class="instafoto__title">
       #YellowKitchens<span class="instafoto__text"> in instagram</span>
      </h2>
-     <ul class="instafoto__list">
-      <li class="instafoto__item">
-       <img src="./img/instaphoto1.jpg" alt="photo of the kitchen" width="296px" />
-      </li>
-      <li class="instafoto__item">
-       <img src="./img/instaphoto2.jpg" alt="сooking" width="296px" />
-      </li>
-      <li class="instafoto__item">
-       <img src="./img/instaphoto3.jpg" alt="сooking" width="296px" />
-      </li>
-      <li class="instafoto__item">
-       <img src="./img/instaphoto4.jpg" alt="the ingredients" width="296px" />
-      </li>
-     </ul>
+     <div class="instafoto__slider">
+      <div class="instafoto-slider swiper">
+       <ul class="instafoto__list swiper-wrapper">
+        <li class="instafoto__item swiper-slide">
+         <img src="./img/instaphoto1.jpg" alt="photo of the kitchen" width="296px" />
+        </li>
+        <li class="instafoto__item swiper-slide">
+         <img src="./img/instaphoto2.jpg" alt="сooking" width="296px" />
+        </li>
+        <li class="instafoto__item swiper-slide">
+         <img src="./img/instaphoto3.jpg" alt="сooking" width="296px" />
+        </li>
+        <li class="instafoto__item swiper-slide">
+         <img src="./img/instaphoto4.jpg" alt="the ingredients" width="296px" />
+        </li>
+       </ul>
+      </div>
+
+      <button class="instafoto__button instafoto__button--left">
+       <svg class="instafoto__icon" width="24px" height="24px">
+        <use href="./img/icons.svg#icon-left"></use>
+       </svg>
+      </button>
+      <button class="instafoto__button instafoto__button--right">
+       <svg class="instafoto__icon" width="24px" height="24px">
+        <use href="./img/icons.svg#icon-right"></use>
+       </svg>
+      </button>
+     </div>
     </div>
    </section>
   </main>
