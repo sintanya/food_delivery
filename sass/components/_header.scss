@@ -46,7 +46,6 @@
   padding: 20px 36px;
 
   background: #fff;
-  transform: translateX(200%);
 
   box-shadow: -10px 10px 20px rgb(0 0 0 / 8%);
 
@@ -57,8 +56,6 @@
 
   &.is-open {
    display: block;
-
-   transform: translateX(0);
 
    opacity: 1;
   }

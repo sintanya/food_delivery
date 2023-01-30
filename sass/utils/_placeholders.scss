@@ -67,7 +67,8 @@
   height: 40px;
  }
 
- &:hover {
+ &:hover,
+ &:focus {
   color: $primary-text-color;
  }
 }

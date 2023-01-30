@@ -14,9 +14,9 @@
   display: flex;
   justify-content: space-between;
 
-  margin-bottom: 96px;
+  margin-bottom: 76px;
 
-  @media screen and (max-width: $width-tablet) {
+  @media screen and (max-width: 1000px) {
    flex-direction: column;
   }
 
@@ -31,7 +31,7 @@
   width: 100%;
   margin-right: 40px;
 
-  @media screen and (max-width: $width-tablet) {
+  @media screen and (max-width: 1000px) {
    max-width: 100%;
    display: flex;
    justify-content: space-around;
@@ -53,7 +53,7 @@
 
   display: block;
 
-  @media screen and (max-width: $width-tablet) {
+  @media screen and (max-width: 1000px) {
    margin-bottom: 0;
 
    @media screen and (max-width: $width-mobile) {
@@ -71,41 +71,39 @@
    height: 1px;
    background: $footer-text-color;
 
-   @media screen and (max-width: $width-tablet) {
+   @media screen and (max-width: 1000px) {
     display: none;
    }
   }
  }
 
  &__info {
-  max-width: 714px;
+  max-width: 778px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 
-  @media screen and (max-width: 1027px) {
-   justify-content: flex-end;
-  }
+  //   @media screen and (max-width: 1027px) {
+  //    justify-content: flex-end;
+  //   }
 
-  @media screen and (max-width: $width-tablet) {
-   justify-content: center;
+  @media screen and (max-width: 1000px) {
+   max-width: 100%;
+   justify-content: space-around;
   }
 
   @media screen and (max-width: $width-mobile) {
-   width: 100%;
+   max-width: 100%;
   }
  }
 
  &__information {
-  margin: 0 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
 
-  @media screen and (max-width: 1027px) {
-   margin: 0 20px 20px 0;
-  }
-
-  @media screen and (max-width: $width-tablet) {
-   margin: 0 50px 20px 0;
+  @media screen and (max-width: 1000px) {
+   margin-right: 20px;
   }
 
   @media screen and (max-width: $width-mobile) {
@@ -116,14 +114,11 @@
  }
 
  &__help {
-  margin: 0 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
 
-  @media screen and (max-width: 1027px) {
-   margin: 0 0 20px 20px;
-  }
-
-  @media screen and (max-width: $width-tablet) {
-   margin: 0 0 20px 50px;
+  @media screen and (max-width: 1000px) {
+   margin-right: 20px;
   }
 
   @media screen and (max-width: $width-mobile) {
@@ -141,9 +136,6 @@
 
   @media screen and (max-width: $width-mobile) {
    margin-bottom: 20px;
-  }
-
-  @media screen and (max-width: $width-mobile) {
    text-align: center;
   }
  }
@@ -170,9 +162,10 @@
 
  &__second-part {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 
-  @media screen and (max-width: $width-tablet) {
+  @media screen and (max-width: 1000px) {
    justify-content: space-around;
   }
 
@@ -186,7 +179,7 @@
   display: flex;
 
   @media screen and (max-width: $width-mobile) {
-   justify-content: center;
+   justify-content: space-around;
   }
  }
 
@@ -207,7 +200,7 @@
   & + & {
    margin-left: 60px;
 
-   @media screen and (max-width: $width-tablet) {
+   @media screen and (max-width: 1000px) {
     margin-left: 24px;
    }
   }
@@ -220,19 +213,23 @@
 
  &__item + &__item {
   margin-left: 9px;
-  @media screen and (max-width: $width-tablet) {
+  @media screen and (max-width: 1000px) {
    margin-left: 15px;
   }
  }
 }
 
 .contacts {
- max-width: 296px;
+ max-width: 266px;
  width: 100%;
- margin: 0 10px;
+
+ @media screen and (max-width: $width-mobile) {
+  max-width: 296px;
+  width: 100%;
+ }
 
  &__title {
-  @media screen and (max-width: $width-tablet) {
+  @media screen and (max-width: $width-mobile) {
    text-align: center;
   }
  }
@@ -258,12 +255,15 @@
 }
 
 .networks {
+ @media screen and (max-width: $width-mobile) {
+  margin-bottom: 20px;
+ }
+
  &__list {
   display: flex;
 
   @media screen and (max-width: $width-mobile) {
    justify-content: center;
-   margin-bottom: 20px;
   }
  }
 
