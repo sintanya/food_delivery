@@ -290,6 +290,9 @@ a {
     height: 20px;
   }
 }
+.button-login__name {
+  margin-top: 3px;
+}
 
 .button-menu {
   width: 53px;
