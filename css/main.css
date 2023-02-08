@@ -159,6 +159,7 @@ a {
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #d4d7e6;
+  z-index: 2;
 }
 .header__container {
   position: relative;
@@ -394,7 +395,7 @@ a {
 @media screen and (max-width: 480px) {
   .hero {
     min-height: 457px;
-    margin-bottom: 0;
+    margin-bottom: 35px;
     background-position: top 116px right 0;
     background-size: 80%;
   }
