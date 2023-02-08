@@ -69,6 +69,8 @@
  }
 
  &__form {
+  max-width: 426px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,12 +78,13 @@
 
  &__input-box {
   position: relative;
+  width: 100%;
   margin-right: 4px;
  }
 
  &__input {
   @extend %section-text;
-  max-width: 336px;
+
   width: 100%;
 
   padding: 24px 16px 24px 48px;
