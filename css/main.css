@@ -68,6 +68,10 @@ a {
   color: inherit;
 }
 
+button {
+  padding: 0;
+}
+
 .instafoto__title, .specialities__title, .delivery__title, .restaurants__title {
   font-family: "Poppins";
   font-weight: 300;
@@ -159,7 +163,7 @@ a {
   width: 100%;
   background: #fff;
   border-bottom: 1px solid #d4d7e6;
-  z-index: 2;
+  z-index: 10;
 }
 .header__container {
   position: relative;
